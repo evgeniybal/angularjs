@@ -5,12 +5,13 @@
     <script src="node_modules/angular-route/angular-route.min.js"></script>
     <script src="index.js"></script>
     <script src="app.js"></script>
+
     <script src="app.config.js"></script>
+    <script src="components/about/about.js"></script>
     <script src="components/userManger/userManager.js"></script>
     <script src="components/userForm/userForm.js"></script>
     <script src="components/userList/userList.js"></script>
-    
-    
+
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -19,6 +20,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <app></app>
+    <div ng-view></div>
   </body>
 </html>
