@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "angular": "1.7.8",
+    "angular-route": "^1.7.8",
     "bootstrap": "^4.3.1"
   }
 }
