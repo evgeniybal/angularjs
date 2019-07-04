@@ -1,35 +1,21 @@
-(function () {
-    'use strict';
+(function() {
+  'use strict';
 
-    angular
-        .module ('myApp')
-        .component ('app', component());
+  angular.module('myApp').component('app', app());
 
+  function app() {
+    function appController() {
+      var ctrl = this;
 
-    function component() {
+      init();
 
-        function componentController(){
-            var ctrl = this;
-            ctrl.add = function(){
-                
-                ctrl.users.push(ctrl.user);
-                ctrl.user = null;
-                debugger;
-            }
-            init();
-
-            function init(){
-                console.log('Init ');
-                ctrl.users = [];
-            }
-        }
-
-        return {
-            templateUrl: 'app.html',
-            bindings: {},
-            controller: componentController,
-            
-        }
+      function init() {}
     }
 
-} ());
+    return {
+      template: '<user-manager></user-manager>',
+      bindings: {},
+      controller: appController
+    };
+  }
+})();
