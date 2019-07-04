@@ -8,9 +8,12 @@ angular.module('myApp').config([
       .when('/about', {
         template: '<about></about>'
       })
+      .when('/', {
+        template: '<h1>Welcome to our site!</h1>'
+      })
       .when('/phones/:phoneId', {
         template: '<phone-detail></phone-detail>'
       })
-      .otherwise('/about');
+      .otherwise('/');
   }
 ]);
