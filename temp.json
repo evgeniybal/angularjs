@@ -1,0 +1,30 @@
+{
+  "form": {
+    "$error": {},
+    "$name": "$ctrl.form",
+    "$dirty": true,
+    "$pristine": false,
+    "$valid": true,
+    "$invalid": false,
+    "$submitted": true,
+    "firstName": {
+      "$viewValue": "фвыа",
+      "$modelValue": "фвыа",
+      "$validators": {},
+      "$asyncValidators": {},
+      "$parsers": [],
+      "$formatters": [null],
+      "$viewChangeListeners": [],
+      "$untouched": false,
+      "$touched": true,
+      "$pristine": false,
+      "$dirty": true,
+      "$valid": true,
+      "$invalid": false,
+      "$error": {},
+      "$name": "firstName",
+      "$options": {}
+    }
+  },
+  "user": { "firstName": "фвыа", "lastName": "фвыа" }
+}

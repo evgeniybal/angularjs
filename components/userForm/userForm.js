@@ -7,6 +7,12 @@
     function userFormController() {
       var ctrl = this;
 
+      ctrl.getFieldInfo = function(name){
+        var touched = ctrl.form[name].$touched;
+        var errors = '';
+debugger;
+      return ctrl.form[name];
+      }
       ctrl.addUser = function() {
         var newUser = Object.assign({}, ctrl.user);
         ctrl.onAddUser({ user: newUser });
