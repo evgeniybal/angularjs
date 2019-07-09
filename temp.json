@@ -6,10 +6,10 @@
     "$pristine": false,
     "$valid": true,
     "$invalid": false,
-    "$submitted": true,
+    "$submitted": false,
     "firstName": {
-      "$viewValue": "фвыа",
-      "$modelValue": "фвыа",
+      "$viewValue": "asdfadsf",
+      "$modelValue": "asdfadsf",
       "$validators": {},
       "$asyncValidators": {},
       "$parsers": [],
@@ -24,7 +24,25 @@
       "$error": {},
       "$name": "firstName",
       "$options": {}
+    },
+    "lastName": {
+      "$viewValue": "asdf",
+      "$modelValue": "asdf",
+      "$validators": {},
+      "$asyncValidators": {},
+      "$parsers": [],
+      "$formatters": [null],
+      "$viewChangeListeners": [],
+      "$untouched": false,
+      "$touched": true,
+      "$pristine": false,
+      "$dirty": true,
+      "$valid": true,
+      "$invalid": false,
+      "$error": {},
+      "$name": "lastName",
+      "$options": {}
     }
   },
-  "user": { "firstName": "фвыа", "lastName": "фвыа" }
+  "user": { "lastName": "asdf", "firstName": "asdfadsf" }
 }

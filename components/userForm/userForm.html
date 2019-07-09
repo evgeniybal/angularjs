@@ -16,7 +16,7 @@
           ng-model="$ctrl.user.firstName"
           required
         />
-        <error-message form="$ctrl.form" name="firstName"></error-message>
+        <error-message form="$ctrl.form" name="firstName" class="error"></error-message>
         
         <error-message field="$ctrl.form['firstName']"></error-message>
       </div>
@@ -30,6 +30,7 @@
           
           ng-model="$ctrl.user.lastName"
           required
+          adult
         />
         <error-message field="$ctrl.form['lastName']"></error-message>
       </div>
