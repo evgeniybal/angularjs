@@ -9,6 +9,7 @@ import Navbar from '../components/navbar/navbar';
 import userForm from '../components/userForm/userForm';
 import userlist from '../components/userList/userlist';
 import userManager from '../components/userManger/userManager';
+import customValidation from '../directives/customValidation';
 
 const module = angular.module('myApp', ['ngRoute']);
 module.component('app', appComponent);
@@ -18,6 +19,7 @@ module.component('errorMessage', errorMessage);
 module.component('userForm', userForm);
 module.component('userList', userlist);
 module.component('userManager', userManager);
+module.directive('adult', customValidation);
 
 
 angular.module('myApp').config([

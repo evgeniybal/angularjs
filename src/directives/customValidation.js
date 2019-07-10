@@ -1,10 +1,6 @@
-(function() {
-  'use strict';
 
-  angular.module('myApp').directive('adult', directive);
-
-  /** @ngInject */
-  function directive() {
+  
+  const customValidation = function directive() {
     function directiveController() {
       var vm = this;
 
@@ -23,11 +19,11 @@
 
         var age = Number(viewValue);
 
-        if (age >= 18 && age <= 100) {
+        if (age > 18) {
           // correct value
           return true;
         }
-        return {error:true, message:'To Young'}; // wrong value
+        return false; // wrong value
       };
     }
 
@@ -41,4 +37,5 @@
       scope: {}
     };
   }
-})();
+
+export default customValidation;

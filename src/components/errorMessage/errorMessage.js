@@ -20,6 +20,9 @@ function componentController() {
       case 'pattern':
         return 'Invalid format';
 
+        case 'adult':
+        return 'To Young';
+
       default:
         return 'Entered value is not valid';
     }
