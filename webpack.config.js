@@ -5,7 +5,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 var WebpackAutoInject = require('webpack-auto-inject-version');
 
 module.exports = {
-  entry: './app.js',
+  entry: './src/index.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'build')
@@ -35,7 +35,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin(
-      { template: 'index.html' },
+      { template: './src/index.html' },
       new WebpackAutoInject({
         // options
         // example:
