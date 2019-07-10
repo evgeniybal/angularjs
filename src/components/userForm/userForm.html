@@ -26,11 +26,10 @@
           type="text"
           class="form-control"
           placeholder="Last name"
-          ng-maxlength="5"
-          
-          ng-model="$ctrl.user.lastName"
+          ng-maxlength="5"          
+          ng-model="$ctrl.user.lastName"          
           required
-          adult
+          yup schema="$ctrl.schema"
         />
         <error-message field="$ctrl.form['lastName']"></error-message>
       </div>

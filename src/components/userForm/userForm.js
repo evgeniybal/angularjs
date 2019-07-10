@@ -1,4 +1,5 @@
 import template from './userForm.html';
+import schema from './validationSchema';
 
 export default {
   template,
@@ -9,6 +10,10 @@ export default {
 function userFormController() {
   var ctrl = this;
 
+  ctrl.$onInit = function() {    
+    ctrl.schema = schema;
+  };
+  
   ctrl.getFieldInfo = function(name) {
     var touched = ctrl.form[name].$touched;
     var errors = '';

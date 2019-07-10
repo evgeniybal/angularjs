@@ -19,7 +19,7 @@ module.component('errorMessage', errorMessage);
 module.component('userForm', userForm);
 module.component('userList', userlist);
 module.component('userManager', userManager);
-module.directive('adult', customValidation);
+module.directive('yup', customValidation);
 
 
 angular.module('myApp').config([
