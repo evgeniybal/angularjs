@@ -11,13 +11,12 @@
           name="firstName"
           type="text"
           class="form-control"
-          placeholder="First name"          
+          placeholder="First name"
           ng-model="$ctrl.user.firstName"
           required
-          yup schema="$ctrl.schema"
+          yup
+          schema="$ctrl.schema"
         />
-        <error-message form="$ctrl.form" name="firstName" class="error"></error-message>
-        
         <error-message field="$ctrl.form['firstName']"></error-message>
       </div>
       <div class="col-sm-4">
@@ -26,10 +25,10 @@
           type="text"
           class="form-control"
           placeholder="Last name"
-                 
-          ng-model="$ctrl.user.lastName"          
+          ng-model="$ctrl.user.lastName"
           required
-          yup schema="$ctrl.schema"
+          yup
+          schema="$ctrl.schema"
         />
         <error-message field="$ctrl.form['lastName']"></error-message>
       </div>
