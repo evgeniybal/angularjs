@@ -31,7 +31,7 @@
       vm.$onInit = function(){
         console.log('onInit', vm, vm.field);
         vm._attrs = vm.$$attr.$attr.filter(f=>inputAttibutes.indexOf(f)!== -1);
-        debugger;
+        
     }
 
       init();

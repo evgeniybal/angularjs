@@ -8,7 +8,6 @@ const yupSchemaValidation = function directive() {
   }
 
   function link(scope, element, attributes, control) {
-    debugger;
     control.$validators.yup = function(modelValue, viewValue) {
       if (control.$isEmpty(modelValue)) {
         // if empty, correct value
