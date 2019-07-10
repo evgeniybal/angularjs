@@ -25,7 +25,7 @@ function componentController() {
       case 'adult':
         return 'To Young';
       case 'email':
-        return 'Invalid email format';
+        return 'Invalid email format';      
 
       default:
         return 'Entered value is not valid';
@@ -36,7 +36,7 @@ function componentController() {
     if (!vm.field) return '';
     
     //standart errors from angularjs 
-    var errors = Object.keys(vm.field.$error);
+    var errors = Object.keys(vm.field.$error).filter(x=>x!=='yup');
     if (!vm.field.$pristine && vm.field.$error && errors.length > 0) {      
       return _getErrorDescription(errors[0]);
     }
