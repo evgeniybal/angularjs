@@ -11,10 +11,10 @@
           name="firstName"
           type="text"
           class="form-control"
-          placeholder="First name"
-          ng-minlength="2"
+          placeholder="First name"          
           ng-model="$ctrl.user.firstName"
           required
+          yup schema="$ctrl.schema"
         />
         <error-message form="$ctrl.form" name="firstName" class="error"></error-message>
         
@@ -26,7 +26,7 @@
           type="text"
           class="form-control"
           placeholder="Last name"
-          ng-maxlength="5"          
+                 
           ng-model="$ctrl.user.lastName"          
           required
           yup schema="$ctrl.schema"
